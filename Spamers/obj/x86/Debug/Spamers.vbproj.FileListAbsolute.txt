@@ -1,0 +1,9 @@
+E:\Project VB Net\Spamers\Spamers\bin\Debug\Spamers.exe
+E:\Project VB Net\Spamers\Spamers\bin\Debug\Spamers.pdb
+E:\Project VB Net\Spamers\Spamers\bin\Debug\Spamers.xml
+E:\Project VB Net\Spamers\Spamers\obj\x86\Debug\Spamers.Resources.resources
+E:\Project VB Net\Spamers\Spamers\obj\x86\Debug\Spamers.vbproj.GenerateResource.Cache
+E:\Project VB Net\Spamers\Spamers\obj\x86\Debug\Spamers.exe
+E:\Project VB Net\Spamers\Spamers\obj\x86\Debug\Spamers.xml
+E:\Project VB Net\Spamers\Spamers\obj\x86\Debug\Spamers.pdb
+E:\Project VB Net\Spamers\Spamers\obj\x86\Debug\Spamers.Form1.resources
