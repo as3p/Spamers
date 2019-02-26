@@ -1,11 +1,9 @@
-﻿'' Author : THE LORD
-'' Release Date : Tuesday, January 10, 2017
-
-'' Warna Dasar
+﻿'' Warna Dasar
 '  Base   : 251, 251, 251
 '  Border : 226, 226, 226	
 '  Font   : 124, 133, 142	
 '  Theme  : 41, 133, 211
+
 'Jenis Font : "Segoe UI", 10, FontStyle.Bold
 
 
