@@ -22,12 +22,17 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GabungFlatButton11 = New Spamers.GabungFlatButton1()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GabungTabControl1 = New Spamers.GabungTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GabungGroupBox5 = New Spamers.GabungGroupBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.GabungFlatButton34 = New Spamers.GabungFlatButton3()
         Me.GabungFlatButton33 = New Spamers.GabungFlatButton3()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.GabungSwitch11 = New Spamers.GabungSwitch1()
@@ -44,6 +49,13 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GabungGroupBox4 = New Spamers.GabungGroupBox()
+        Me.GabungFlatButton36 = New Spamers.GabungFlatButton3()
+        Me.GabungTextbox39 = New Spamers.GabungTextbox3()
+        Me.GabungFlatButton35 = New Spamers.GabungFlatButton3()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.GabungGroupBox3 = New Spamers.GabungGroupBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -64,13 +76,14 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GabungTextbox31 = New Spamers.GabungTextbox3()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.GabungFlatButton34 = New Spamers.GabungFlatButton3()
+        Me.GabungFlatButton37 = New Spamers.GabungFlatButton3()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.Panel1.SuspendLayout()
         Me.GabungTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GabungGroupBox5.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.GabungGroupBox4.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.GabungGroupBox1.SuspendLayout()
@@ -112,6 +125,13 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Spamers V.1.0.0"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Timer1
+        '
+        '
         'GabungTabControl1
         '
         Me.GabungTabControl1.Alignment = System.Windows.Forms.TabAlignment.Left
@@ -144,6 +164,7 @@ Partial Class Form1
         'GabungGroupBox5
         '
         Me.GabungGroupBox5.BorderColour = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.GabungGroupBox5.Controls.Add(Me.Label14)
         Me.GabungGroupBox5.Controls.Add(Me.GabungFlatButton34)
         Me.GabungGroupBox5.Controls.Add(Me.GabungFlatButton33)
         Me.GabungGroupBox5.Controls.Add(Me.Label11)
@@ -168,6 +189,28 @@ Partial Class Form1
         Me.GabungGroupBox5.TabIndex = 0
         Me.GabungGroupBox5.Text = "Send Email"
         Me.GabungGroupBox5.TextColour = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(142, Byte), Integer))
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(390, 402)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(61, 19)
+        Me.Label14.TabIndex = 15
+        Me.Label14.Text = "Label14"
+        '
+        'GabungFlatButton34
+        '
+        Me.GabungFlatButton34.BackColor = System.Drawing.Color.Transparent
+        Me.GabungFlatButton34.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.GabungFlatButton34.Location = New System.Drawing.Point(323, 123)
+        Me.GabungFlatButton34.Name = "GabungFlatButton34"
+        Me.GabungFlatButton34.RoundRadius = 1
+        Me.GabungFlatButton34.SideImage = Nothing
+        Me.GabungFlatButton34.SideImageAlign = Spamers.GabungFlatButton3.SideAligin.Left
+        Me.GabungFlatButton34.Size = New System.Drawing.Size(69, 21)
+        Me.GabungFlatButton34.TabIndex = 14
+        Me.GabungFlatButton34.Text = "Message"
         '
         'GabungFlatButton33
         '
@@ -344,6 +387,12 @@ Partial Class Form1
         'GabungGroupBox4
         '
         Me.GabungGroupBox4.BorderColour = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.GabungGroupBox4.Controls.Add(Me.GabungFlatButton37)
+        Me.GabungGroupBox4.Controls.Add(Me.GabungFlatButton36)
+        Me.GabungGroupBox4.Controls.Add(Me.GabungTextbox39)
+        Me.GabungGroupBox4.Controls.Add(Me.GabungFlatButton35)
+        Me.GabungGroupBox4.Controls.Add(Me.Label13)
+        Me.GabungGroupBox4.Controls.Add(Me.ListView1)
         Me.GabungGroupBox4.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.GabungGroupBox4.HeaderColour = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.GabungGroupBox4.Location = New System.Drawing.Point(27, 27)
@@ -353,6 +402,78 @@ Partial Class Form1
         Me.GabungGroupBox4.TabIndex = 0
         Me.GabungGroupBox4.Text = "Import Your Contacts"
         Me.GabungGroupBox4.TextColour = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(142, Byte), Integer))
+        '
+        'GabungFlatButton36
+        '
+        Me.GabungFlatButton36.BackColor = System.Drawing.Color.Transparent
+        Me.GabungFlatButton36.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.GabungFlatButton36.Location = New System.Drawing.Point(342, 147)
+        Me.GabungFlatButton36.Name = "GabungFlatButton36"
+        Me.GabungFlatButton36.RoundRadius = 1
+        Me.GabungFlatButton36.SideImage = Nothing
+        Me.GabungFlatButton36.SideImageAlign = Spamers.GabungFlatButton3.SideAligin.Left
+        Me.GabungFlatButton36.Size = New System.Drawing.Size(212, 30)
+        Me.GabungFlatButton36.TabIndex = 4
+        Me.GabungFlatButton36.Text = "Upload Email"
+        '
+        'GabungTextbox39
+        '
+        Me.GabungTextbox39.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(251, Byte), Integer))
+        Me.GabungTextbox39.Location = New System.Drawing.Point(97, 74)
+        Me.GabungTextbox39.MaxLength = 32767
+        Me.GabungTextbox39.Name = "GabungTextbox39"
+        Me.GabungTextbox39.ReadOnly = False
+        Me.GabungTextbox39.SideImage = Nothing
+        Me.GabungTextbox39.Size = New System.Drawing.Size(165, 30)
+        Me.GabungTextbox39.TabIndex = 3
+        Me.GabungTextbox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.GabungTextbox39.UseSystemPasswordChar = False
+        Me.GabungTextbox39.WatermarkText = ""
+        '
+        'GabungFlatButton35
+        '
+        Me.GabungFlatButton35.BackColor = System.Drawing.Color.Transparent
+        Me.GabungFlatButton35.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.GabungFlatButton35.Location = New System.Drawing.Point(268, 74)
+        Me.GabungFlatButton35.Name = "GabungFlatButton35"
+        Me.GabungFlatButton35.RoundRadius = 1
+        Me.GabungFlatButton35.SideImage = Nothing
+        Me.GabungFlatButton35.SideImageAlign = Spamers.GabungFlatButton3.SideAligin.Left
+        Me.GabungFlatButton35.Size = New System.Drawing.Size(49, 30)
+        Me.GabungFlatButton35.TabIndex = 2
+        Me.GabungFlatButton35.Text = "Insert"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(27, 81)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(57, 19)
+        Me.Label13.TabIndex = 1
+        Me.Label13.Text = "Email  :"
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2})
+        Me.ListView1.FullRowSelect = True
+        Me.ListView1.GridLines = True
+        Me.ListView1.Location = New System.Drawing.Point(31, 118)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(286, 334)
+        Me.ListView1.TabIndex = 0
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "No"
+        Me.ColumnHeader1.Width = 30
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Email"
+        Me.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader2.Width = 250
         '
         'TabPage3
         '
@@ -606,22 +727,18 @@ Partial Class Form1
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "TabPage5"
         '
-        'OpenFileDialog1
+        'GabungFlatButton37
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'GabungFlatButton34
-        '
-        Me.GabungFlatButton34.BackColor = System.Drawing.Color.Transparent
-        Me.GabungFlatButton34.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.GabungFlatButton34.Location = New System.Drawing.Point(323, 123)
-        Me.GabungFlatButton34.Name = "GabungFlatButton34"
-        Me.GabungFlatButton34.RoundRadius = 1
-        Me.GabungFlatButton34.SideImage = Nothing
-        Me.GabungFlatButton34.SideImageAlign = Spamers.GabungFlatButton3.SideAligin.Left
-        Me.GabungFlatButton34.Size = New System.Drawing.Size(69, 21)
-        Me.GabungFlatButton34.TabIndex = 14
-        Me.GabungFlatButton34.Text = "Message"
+        Me.GabungFlatButton37.BackColor = System.Drawing.Color.Transparent
+        Me.GabungFlatButton37.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.GabungFlatButton37.Location = New System.Drawing.Point(342, 200)
+        Me.GabungFlatButton37.Name = "GabungFlatButton37"
+        Me.GabungFlatButton37.RoundRadius = 1
+        Me.GabungFlatButton37.SideImage = Nothing
+        Me.GabungFlatButton37.SideImageAlign = Spamers.GabungFlatButton3.SideAligin.Left
+        Me.GabungFlatButton37.Size = New System.Drawing.Size(212, 30)
+        Me.GabungFlatButton37.TabIndex = 5
+        Me.GabungFlatButton37.Text = "Save Email"
         '
         'Form1
         '
@@ -641,6 +758,8 @@ Partial Class Form1
         Me.GabungGroupBox5.ResumeLayout(False)
         Me.GabungGroupBox5.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
+        Me.GabungGroupBox4.ResumeLayout(False)
+        Me.GabungGroupBox4.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         Me.GabungGroupBox1.ResumeLayout(False)
@@ -694,5 +813,16 @@ Partial Class Form1
     Friend WithEvents GabungTextbox38 As Spamers.GabungTextbox3
     Friend WithEvents GabungCheckBox11 As Spamers.GabungCheckBox1
     Friend WithEvents GabungFlatButton34 As Spamers.GabungFlatButton3
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents GabungTextbox39 As Spamers.GabungTextbox3
+    Friend WithEvents GabungFlatButton35 As Spamers.GabungFlatButton3
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents ListView1 As System.Windows.Forms.ListView
+    Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents GabungFlatButton36 As Spamers.GabungFlatButton3
+    Friend WithEvents GabungFlatButton37 As Spamers.GabungFlatButton3
+    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
 
 End Class
